@@ -1,6 +1,6 @@
 # Hi, I'm Adhi Sakthi 👋
 
-### Electronics & Computer Engineering Student | Embedded Systems | VLSI & RTL Design
+### Electronics & Computer Engineering Student | Embedded Systems | VLSI Design
 
 I'm a **3rd-year Electronics & Computer Engineering student at Sona College of Technology, Salem**, with a strong interest in **Embedded Systems, VLSI, RTL Design, Verification, and RISC-V based SoC development**.
 
@@ -21,7 +21,7 @@ I'm currently focusing on:
 * 🧪 **Design Verification & SystemVerilog**
 * ⚙️ **VLSI Design Flow**
 * 📐 **Static Timing Analysis**
-* 🏭 **Physical Design & IC Tape-out concepts**
+* 🏭 **Physical Design & IC Tape-out Concepts**
 * 📡 **Industrial IoT & Communication Protocols**
 
 ---
@@ -40,7 +40,7 @@ I'm currently focusing on:
 * ESP32
 * STM32
 * ARM Cortex
-* UART
+* UART / USART
 * SPI
 * I2C
 * RS232
@@ -49,8 +49,8 @@ I'm currently focusing on:
 * MQTT
 * HTTP
 * LTE / GSM
-* ADC
 * GPIO
+* ADC
 * Timers
 
 ### VLSI & Digital Design
@@ -61,9 +61,6 @@ I'm currently focusing on:
 * FPGA Development
 * RISC-V ISA
 * RV32I
-* Pipelined Processor Design
-* Hazard Detection
-* Data Forwarding
 * Synthesis
 * Static Timing Analysis
 
@@ -79,243 +76,39 @@ I'm currently focusing on:
 
 ---
 
+## 💼 Internship Experience
+
+### Firmware Design Engineer Intern — Salieabs Solutions LLP
+
+Worked on an **Industrial IoT Gateway** project involving ESP32, STM32, LTE/GSM modules, RS485, Modbus, and MQTT communication. Gained hands-on experience in Embedded C, UART/USART, AT commands, network registration, signal-quality monitoring, PPPoS, JSON data handling, RTC integration, and industrial device communication while debugging hardware and firmware during development.
+
+### VLSI Industrial Training — Centre of Excellence
+
+Currently undergoing a **one-year industry-oriented VLSI training program** through the college Centre of Excellence, focusing on **RISC-V SoC Development and IC Tape-out**. Working across RTL Design, Design Verification, Physical Design, FPGA prototyping, synthesis, Static Timing Analysis, and EDA tool flows while developing a practical understanding of the semiconductor design process.
+
+---
+
 ## 🚀 Featured Projects
 
 ### 🖥️ RV32I RISC-V 5-Stage Pipelined Processor
 
-A Verilog-based implementation of a **32-bit RISC-V RV32I processor** with a 5-stage pipeline.
-
-**Pipeline:**
-
-```text
-IF → ID → EX → MEM → WB
-```
-
-**Implemented concepts:**
-
-* Program Counter
-* Instruction Fetch
-* Instruction Decode
-* Register File
-* ALU
-* Immediate Generation
-* Branch Handling
-* Pipeline Registers
-* Hazard Detection
-* Data Forwarding
-* Load / Store Operations
-
-**Instruction support includes:**
-
-* ADD / ADDI
-* SUB
-* AND / ANDI
-* OR / ORI
-* XOR / XORI
-* Shift operations
-* LW
-* SW
-* BEQ
-* BNE
-
-**Tools:** Verilog HDL, Vivado, Cadence
-
----
+Designed and implemented a 32-bit RV32I RISC-V processor in Verilog HDL using a five-stage IF-ID-EX-MEM-WB pipeline. The processor includes instruction decoding, register file, ALU, immediate generation, load/store operations, branch handling, hazard detection, and data forwarding. The design was simulated and synthesized, with FPGA prototyping and VLSI design-flow exploration as part of the development process.
 
 ### 📡 Industrial IoT Gateway
 
-An Industrial IoT gateway developed around **ESP32 / STM32**, designed for collecting field data and communicating it to a remote server.
-
-**Key areas implemented:**
-
-* Modbus communication
-* RS485 interface
-* LTE/GSM communication
-* MQTT communication
-* AT command handling
-* Network registration
-* Signal quality monitoring
-* JSON-based data formatting
-* RTC timestamping
-* Device identification
-
-The system demonstrates a typical industrial data path:
-
-```text
-Industrial Device
-       ↓
-    RS485
-       ↓
-     ESP32
-       ↓
-   LTE / GSM
-       ↓
-     MQTT
-       ↓
-     Server
-```
-
----
+Developed an Industrial IoT Gateway using ESP32/STM32 for collecting data from industrial devices through RS485 and Modbus communication. The gateway processes field data, communicates with an LTE/GSM module using AT commands, and publishes telemetry through MQTT. The project involved Embedded C, UART, JSON formatting, RTC timestamping, network registration, and two-way communication.
 
 ### 🌐 Bird-Inspired Disaster Monitoring System
 
-An embedded monitoring concept using multiple sensor nodes to collect environmental and physical parameters for **risk analysis and early warning research**.
-
-The system explores:
-
-* Environmental sensing
-* Pressure monitoring
-* Temperature & humidity
-* Soil conditions
-* Vibration
-* Magnetic-field measurements
-* Wireless sensor-node communication
-* Lightweight machine-learning based analysis
-
-The goal is to combine **real-time sensor data with historical/environmental information** for risk assessment.
-
----
+Developing a multi-node embedded monitoring system that collects environmental and physical parameters such as atmospheric pressure, temperature, humidity, soil conditions, vibration, and magnetic-field data. Sensor data is intended to be processed using a lightweight machine-learning layer for identifying abnormal patterns and supporting risk-level analysis using historical and environmental information.
 
 ### 👁️ Classroom Monitoring System
 
-A computer-vision based monitoring system combining **Python, OpenCV, YOLO, speech recognition, and ESP32-based communication**.
-
-The system explores:
-
-* Person detection
-* Camera streaming
-* Object detection
-* Voice/event recognition
-* ESP32 HTTP communication
-* Multi-threaded processing
-* Real-time monitoring
-
-**Technologies:**
-
-Python • OpenCV • YOLO • Vosk • ESP32 • HTTP
-
----
+Developed a real-time classroom monitoring system integrating Python, OpenCV, YOLO-based object detection, speech recognition, and ESP32 communication. The system processes a camera stream for person detection while integrating voice/event recognition and external ESP32 nodes through HTTP. Multithreading was used to handle camera processing, recognition, communication, and monitoring tasks efficiently.
 
 ### 🔌 Smart Mobile Charging Cutoff System
 
-An ESP32-based system designed to automatically control a charging supply based on battery-level information.
-
-**Concept:**
-
-```text
-Mobile Battery Level
-        ↓
-   HTTP Request
-        ↓
-       ESP32
-        ↓
- Threshold Check
-        ↓
-      Relay
-        ↓
- Charging ON/OFF
-```
-
-The project combines **IoT communication, ESP32 control, relay switching, and automated decision logic**.
-
----
-
-## 🏭 Industrial Training
-
-### VLSI Industrial Training — RISC-V & IC Tape-out
-
-Currently undergoing a **1-year industry-oriented VLSI training program through the Centre of Excellence at college**, focusing on **RISC-V SoC development and IC tape-out concepts**.
-
-Areas of exposure include:
-
-* RTL Design
-* RISC-V architecture
-* Verilog HDL
-* Design Verification
-* Physical Design
-* Synthesis
-* Static Timing Analysis
-* EDA tool flows
-* FPGA prototyping
-* IC design flow
-
-I'm using this training to understand the complete journey from **RTL to implementation**.
-
----
-
-## 💼 Embedded Systems Internship
-
-### Firmware / Embedded Systems
-
-During my internship experience in Industrial IoT, I worked with:
-
-* ESP32
-* STM32
-* Embedded C
-* UART / USART
-* RS485
-* Modbus
-* MQTT
-* LTE/GSM modules
-* AT commands
-* PPPoS
-* JSON
-* RTC
-* GPIO
-* Timers
-* ADC
-
-A major focus was understanding how embedded devices communicate with **industrial equipment and cloud/server infrastructure**.
-
----
-
-## 📚 C Programming
-
-I maintain a separate repository for practicing C programming fundamentals and problem-solving.
-
-Topics include:
-
-* Basic Logic Programs
-* Numbers
-* Arrays
-* Strings
-* Functions
-* Pointers
-* Structures
-* Problem-solving exercises
-* Embedded-C oriented practice
-
-The goal is to strengthen my **C fundamentals for embedded systems and technical interviews**.
-
----
-
-## 🧠 What I'm Currently Learning
-
-I'm continuously improving my knowledge in:
-
-```text
-Embedded C
-     ↓
-Microcontrollers
-     ↓
-Communication Protocols
-     ↓
-Digital Logic
-     ↓
-Verilog HDL
-     ↓
-RTL Design
-     ↓
-RISC-V
-     ↓
-SystemVerilog
-     ↓
-Verification
-     ↓
-Synthesis / STA
-     ↓
-Physical Design
-```
+Developed an ESP32-based smart charging control system that monitors a mobile device's battery level through HTTP communication and automatically controls the charging supply using a relay. The system combines ESP32 networking, battery-status monitoring, threshold-based decision making, and hardware switching to automate charging cutoff based on the configured battery level.
 
 ---
 
@@ -323,48 +116,24 @@ Physical Design
 
 I'm interested in opportunities related to:
 
-* Embedded Systems
-* Firmware Development
-* Embedded Software
-* RTL Design
-* RTL Verification
+* Embedded Systems & Firmware
+* RTL Design & Verification
 * FPGA Development
 * VLSI Design
-* RISC-V
-* SoC Development
+* RISC-V & SoC Development
 * Physical Design
-
----
-
-## 📈 My Approach to Learning
-
-I prefer learning through **implementation rather than only theory**.
-
-My approach is:
-
-**Learn → Build → Debug → Measure → Document → Improve**
-
-I use GitHub to document projects, practice programming, experiment with hardware/software systems, and track my technical learning.
 
 ---
 
 ## 🤝 Let's Connect
 
-I'm always interested in connecting with people working in:
+I'm interested in connecting with engineers and professionals working in **Embedded Systems, VLSI, Semiconductor Design, RISC-V, FPGA, SoC Design, and Firmware Development**.
 
-* Embedded Systems
-* VLSI
-* Semiconductor Design
-* RISC-V
-* FPGA
-* SoC Design
-* Firmware Development
+📧 **Email:** [adhisakthi.devp@gmail.com](mailto:adhisakthi.devp@gmail.com)
 
-📧 **Email:** YOUR_EMAIL
+💼 **LinkedIn:** [Adhi Sakthi](https://www.linkedin.com/in/adhi-sakthi-s)
 
-💼 **LinkedIn:** YOUR_LINKEDIN
-
-🐙 **GitHub:** Adhisakthi-devp
+🐙 **GitHub:** [Adhisakthi-devp](https://github.com/Adhisakthi-devp)
 
 ---
 
